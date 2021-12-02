@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i=1, num, sum=0, remain;
+    printf("Enter the Number: ");
+    scanf(" %d",&num);
+    int a=num;
+    while(num>0){
+        remain=num%10;
+        num=num/10;
+        sum=sum+(remain*remain*remain);
+    }
+    if(sum==a){
+        printf("Armstrong number");
+    }else{
+        printf("Not an Armstrong number");
+    }
+    return 0;
+}
